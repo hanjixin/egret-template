@@ -59,6 +59,8 @@ var ScrollViewContainer = (function (_super) {
                 }
             }
         }
+        shape.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
+        }, this);
         return shape;
     };
     return ScrollViewContainer;

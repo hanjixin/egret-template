@@ -12,14 +12,23 @@
 		"libs/egretmgobe/egretmgobe.js"
 	],
 	"game": [
-		"bin-debug/AssetAdapter.js",
-		"bin-debug/LoadingUI.js",
+		"bin-debug/Scene/Scene.js",
+		"bin-debug/Game/fighter/Airplane.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
+		"bin-debug/Game/EndScene.js",
+		"bin-debug/Game/GameScene.js",
 		"bin-debug/Game/ScrollViewContainer.js",
-		"bin-debug/Scene/Scene.js",
+		"bin-debug/Game/StartSence.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/Game/fighter/BgMap.js",
+		"bin-debug/Game/fighter/Bullet.js",
+		"bin-debug/Game/fighter/GameContainer.js",
+		"bin-debug/Game/fighter/ScorePanel.js",
+		"bin-debug/AssetAdapter.js",
 		"bin-debug/Scene/SceneManager.js",
-		"bin-debug/Scene/ScreenMoives.js"
+		"bin-debug/Scene/ScreenMoives.js",
+		"bin-debug/utils/GameUtil.js"
 	]
 }

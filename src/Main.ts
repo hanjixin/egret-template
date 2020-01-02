@@ -115,8 +115,7 @@ class Main extends eui.UILayer {
         let stageH = this.stage.stageHeight;
         sky.width = stageW;
         sky.height = stageH;
-        this._scrollview = new ScrollViewContainer(this)
-        this.addChild(this._scrollview)
+        SceneManager.Instance.rootLayer = this;
 
         // let topMask = new egret.Shape();
         // topMask.graphics.beginFill(0x000000, 0.5);
@@ -218,7 +217,9 @@ class Main extends eui.UILayer {
         // panel.horizontalCenter = 0;
         // panel.verticalCenter = 0;
         // this.addChild(panel);
-        this.MovieStart(5)
+        egret.log(typeof StartScene, StartScene)
+        SceneManager.Instance.changeScene(new StartScene())
+        // this.MovieStart(5)
     }
 
     private MovieStart(_txnums): void {

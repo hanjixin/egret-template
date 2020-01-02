@@ -49,6 +49,9 @@ class ScrollViewContainer extends egret.DisplayObjectContainer {
                 }
             }
         }
+        shape.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
+            
+        }, this)
         return shape;
     }
 }

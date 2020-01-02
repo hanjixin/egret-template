@@ -189,8 +189,7 @@ var Main = (function (_super) {
         var stageH = this.stage.stageHeight;
         sky.width = stageW;
         sky.height = stageH;
-        this._scrollview = new ScrollViewContainer(this);
-        this.addChild(this._scrollview);
+        SceneManager.Instance.rootLayer = this;
         // let topMask = new egret.Shape();
         // topMask.graphics.beginFill(0x000000, 0.5);
         // topMask.graphics.drawRect(0, 0, stageW, 172);
@@ -282,7 +281,9 @@ var Main = (function (_super) {
         // panel.horizontalCenter = 0;
         // panel.verticalCenter = 0;
         // this.addChild(panel);
-        this.MovieStart(5);
+        egret.log(typeof StartScene, StartScene);
+        SceneManager.Instance.changeScene(new StartScene());
+        // this.MovieStart(5)
     };
     Main.prototype.MovieStart = function (_txnums) {
         //创建一个截图Bitmap
